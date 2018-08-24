@@ -13,13 +13,13 @@ start()  // ajax 获取数据
 // start 获取数据函数
 function start(){
   $.ajax({
-    url: 'http://api.douban.com/v2/movie/top250?callback=jQuery1124028238233283091474_1535106806643&start=0&count=20&_=1535106806644',
+    url: 'https://api.douban.com/v2/movie/top250',
     type: 'GET',
     data: {
       start: index,
       count: 20    // 每次请求的数目
     },
-    dataType: 'json'
+    dataType: 'jsonp'
   }).done(function(ret){
     console.log(ret)
     setData(ret)  // 获取到数据之后 传入setData
