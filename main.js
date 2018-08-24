@@ -13,7 +13,7 @@ start()  // ajax 获取数据
 // start 获取数据函数
 function start(){
   $.ajax({
-    url: 'http://api.douban.com/v2/movie/top250',
+    url: 'http://api.douban.com/v2/movie/top250?callback=jQuery1124028238233283091474_1535106806643&start=0&count=20&_=1535106806644',
     type: 'GET',
     data: {
       start: index,
