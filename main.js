@@ -19,7 +19,7 @@ function start(){
       start: index,
       count: 20    // 每次请求的数目
     },
-    dataType: 'jsonp'
+    dataType: 'json'
   }).done(function(ret){
     console.log(ret)
     setData(ret)  // 获取到数据之后 传入setData
