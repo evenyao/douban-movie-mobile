@@ -17,7 +17,7 @@ body {
   background-color: #fff;
 }
 
-main {
+main section{
   height: calc(100vh - 13.3vw);
   overflow: scroll;
   /* touch弹性效果 */
@@ -57,6 +57,48 @@ main section:first-child {
   color: #ff5722;
 }
 
+.loading {
+  padding: 1.33vw;
+  text-align: center;
+  display: none;
+}
+.loading .iconfont {
+  font-size: 4.3vw;
+  display: inline-block;
+  animation: 1s rotate linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section .search-area {
+  position: relative;
+  margin: 2.67vw;
+  padding-bottom: 2.67vw;
+  border-bottom: 0.27vw solid #ddd;
+}
+section .search-area input {
+  width: calc(100% - 15vw);
+  padding: 2.1vw;
+  background: #eee;
+  border: none;
+  border-radius: 0.5vw;
+  box-shadow: none;
+  outline: none;
+}
+section .search-area .button {
+  position: absolute;
+  right: 0vw;
+  padding: 2.13vw 2.67vw 2.13vw 2.67vw;
+  background: #ff5722;
+  color: #fff;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
 
 footer {
   position: absolute;
